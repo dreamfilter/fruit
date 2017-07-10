@@ -1,0 +1,100 @@
+<!--<?xml version="1.0" encoding="UTF-8"?>-->
+<!--<beans xmlns="http://www.springframework.org/schema/beans" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"-->
+       <!--xmlns:mvc="http://www.springframework.org/schema/mvc"-->
+       <!--xmlns:context="http://www.springframework.org/schema/context"-->
+       <!--xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd-->
+	<!--http://www.springframework.org/schema/mvc http://www.springframework.org/schema/mvc/spring-mvc.xsd http://www.springframework.org/schema/context http://www.springframework.org/schema/context/spring-context.xsd">-->
+
+    <!--&lt;!&ndash; 要调用的工作类 &ndash;&gt;-->
+    <!--<bean id="workTimeCalTask" class="com.lovcreate.service.quartz.WorkTimeCalTask"></bean>-->
+
+    <!--&lt;!&ndash; 定义调用对象和调用对象的方法 &ndash;&gt;-->
+    <!--<bean id="workTimeCalJob" class="org.springframework.scheduling.quartz.MethodInvokingJobDetailFactoryBean">-->
+        <!--&lt;!&ndash; 调用的类 &ndash;&gt;-->
+        <!--<property name="targetObject">-->
+            <!--<ref bean="workTimeCalTask"/>-->
+        <!--</property>-->
+        <!--&lt;!&ndash; 调用类中的方法 &ndash;&gt;-->
+        <!--<property name="targetMethod">-->
+            <!--&lt;!&ndash;<value>execute</value>&ndash;&gt;-->
+        <!--</property>-->
+    <!--</bean>-->
+    <!--&lt;!&ndash; 定义触发时间 &ndash;&gt;-->
+    <!--<bean id="workTimeCalTrigger" class="org.springframework.scheduling.quartz.CronTriggerFactoryBean">-->
+        <!--<property name="jobDetail">-->
+            <!--<ref bean="workTimeCalJob"/>-->
+        <!--</property>-->
+        <!--&lt;!&ndash; cron表达式 &ndash;&gt;-->
+        <!--<property name="cronExpression">-->
+            <!--&lt;!&ndash;<value>0 0/5 * * * ?</value>&ndash;&gt;-->
+            <!--<value> 0 0 23 * * ?</value>-->
+        <!--</property>-->
+    <!--</bean>-->
+
+
+    <!--&lt;!&ndash; 要调用的工作类 &ndash;&gt;-->
+    <!--<bean id="addressBookCalTask" class="com.lovcreate.szdl.service.quartz.AddressBook"></bean>-->
+
+    <!--&lt;!&ndash; 定义调用对象和调用对象的方法 &ndash;&gt;-->
+    <!--<bean id="addressBookCalJob" class="org.springframework.scheduling.quartz.MethodInvokingJobDetailFactoryBean">-->
+        <!--&lt;!&ndash; 调用的类 &ndash;&gt;-->
+        <!--<property name="targetObject">-->
+            <!--<ref bean="addressBookCalTask"/>-->
+        <!--</property>-->
+        <!--&lt;!&ndash; 调用类中的方法 &ndash;&gt;-->
+        <!--<property name="targetMethod">-->
+            <!--<value>synchroAdressBook</value>-->
+        <!--</property>-->
+    <!--</bean>-->
+
+
+    <!--&lt;!&ndash; 定义触发时间 &ndash;&gt;-->
+    <!--<bean id="AddressBookCalTrigger" class="org.springframework.scheduling.quartz.CronTriggerFactoryBean">-->
+        <!--<property name="jobDetail">-->
+            <!--<ref bean="addressBookCalJob"/>-->
+        <!--</property>-->
+        <!--&lt;!&ndash; cron表达式 &ndash;&gt;-->
+        <!--<property name="cronExpression">-->
+            <!--&lt;!&ndash;<value>0 0/5 * * * ?</value>&ndash;&gt;-->
+            <!--<value> 0 0 23 * * ?</value>-->
+        <!--</property>-->
+    <!--</bean>-->
+
+    <!--&lt;!&ndash; 要调用的工作类 &ndash;&gt;-->
+    <!--<bean id="usageAnalysis" class="com.lovcreate.szdl.service.quartz.UsageAnalysis"></bean>-->
+
+    <!--&lt;!&ndash; 定义调用对象和调用对象的方法 &ndash;&gt;-->
+    <!--<bean id="usageAnalysisJob" class="org.springframework.scheduling.quartz.MethodInvokingJobDetailFactoryBean">-->
+        <!--&lt;!&ndash; 调用的类 &ndash;&gt;-->
+        <!--<property name="targetObject">-->
+            <!--<ref bean="usageAnalysis"/>-->
+        <!--</property>-->
+        <!--&lt;!&ndash; 调用类中的方法 &ndash;&gt;-->
+        <!--<property name="targetMethod">-->
+            <!--<value>execute</value>-->
+        <!--</property>-->
+    <!--</bean>-->
+    <!--&lt;!&ndash; 定义触发时间 &ndash;&gt;-->
+    <!--<bean id="usageAnalysisTrigger" class="org.springframework.scheduling.quartz.CronTriggerFactoryBean">-->
+        <!--<property name="jobDetail">-->
+            <!--<ref bean="usageAnalysisJob"/>-->
+        <!--</property>-->
+        <!--&lt;!&ndash; cron表达式 &ndash;&gt;-->
+        <!--<property name="cronExpression">-->
+            <!--&lt;!&ndash;<value>0 0/5 * * * ?</value>&ndash;&gt;-->
+            <!--<value> 0 0 23 * * ?</value>-->
+        <!--</property>-->
+    <!--</bean>-->
+
+    <!--&lt;!&ndash; 总管理类 如果将lazy-init='false'那么容器启动就会执行调度程序  &ndash;&gt;-->
+    <!--<bean id="startQuertz" lazy-init="true" autowire="no"-->
+          <!--class="org.springframework.scheduling.quartz.SchedulerFactoryBean">-->
+        <!--<property name="triggers">-->
+            <!--<list>-->
+                <!--<ref bean="workTimeCalTrigger"/>-->
+                <!--<ref bean="AddressBookCalTrigger"/>-->
+                <!--<ref bean="usageAnalysisTrigger"/>-->
+            <!--</list>-->
+        <!--</property>-->
+    <!--</bean>-->
+<!--</beans>-->
