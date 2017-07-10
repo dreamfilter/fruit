@@ -1,6 +1,7 @@
 package com.lovcreate.service.dao;
 
 import com.lovcreate.api.bean.request.UserRequest;
+import com.lovcreate.api.bean.response.UserResponse;
 import org.springframework.stereotype.Repository;
 
 /**
@@ -9,4 +10,8 @@ import org.springframework.stereotype.Repository;
 @Repository
 public interface UserMapper {
     Integer insert(UserRequest userRequest);
+
+    UserResponse selectPassWord(String userName);
+
+    UserResponse checkLogin(String userName, String s);
 }

@@ -1,7 +1,24 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="ee597d98-ee0f-417e-997e-394c8a00eaa1" name="Default" comment="" />
+    <list default="true" id="ee597d98-ee0f-417e-997e-394c8a00eaa1" name="Default" comment="">
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/api/src/main/java/com/lovcreate/api/ApiErrorCode.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/api/src/main/java/com/lovcreate/api/ApiResult.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/api/src/main/java/com/lovcreate/api/bean/response/UserListResponse.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/api/src/main/java/com/lovcreate/api/bean/response/UserResponse.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/service/src/main/java/com/lovcreate/service/dao/RoleActionMapper.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/service/src/main/java/com/lovcreate/service/entity/RoleAction.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/service/src/main/resources/mybatis/mapper/RoleActionMapper.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/artifacts/mgt_war_exploded.xml" afterPath="$PROJECT_DIR$/.idea/artifacts/mgt_war_exploded.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/api/src/main/java/com/lovcreate/api/service/UserService.java" afterPath="$PROJECT_DIR$/api/src/main/java/com/lovcreate/api/service/UserService.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/mgt/mgt.iml" afterPath="$PROJECT_DIR$/mgt/mgt.iml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/mgt/pom.xml" afterPath="$PROJECT_DIR$/mgt/pom.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/mgt/src/main/java/com/lovcreate/mgt/controller/UserController.java" afterPath="$PROJECT_DIR$/mgt/src/main/java/com/lovcreate/mgt/controller/UserController.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/service/src/main/java/com/lovcreate/service/dao/UserMapper.java" afterPath="$PROJECT_DIR$/service/src/main/java/com/lovcreate/service/dao/UserMapper.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/service/src/main/java/com/lovcreate/service/impl/UserServiceImpl.java" afterPath="$PROJECT_DIR$/service/src/main/java/com/lovcreate/service/impl/UserServiceImpl.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/service/src/main/resources/mybatis/mapper/UserMapper.xml" afterPath="$PROJECT_DIR$/service/src/main/resources/mybatis/mapper/UserMapper.xml" />
+    </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
     <ignored path="$PROJECT_DIR$/service/target/" />
@@ -17,32 +34,43 @@
   <component name="ExecutionTargetManager" SELECTED_TARGET="default_target" />
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="application-context-mvc.xml" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/mgt/src/main/resources/spring/application-context-mvc.xml">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="540">
-              <caret line="71" column="59" lean-forward="true" selection-start-line="71" selection-start-column="59" selection-end-line="71" selection-end-column="59" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="UserRequest.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/api/src/main/java/com/lovcreate/api/bean/request/UserRequest.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="582">
-              <caret line="37" column="0" lean-forward="true" selection-start-line="37" selection-start-column="0" selection-end-line="37" selection-end-column="0" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file leaf-file-name="UserController.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/mgt/src/main/java/com/lovcreate/mgt/controller/UserController.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="315">
-              <caret line="46" column="9" lean-forward="false" selection-start-line="46" selection-start-column="4" selection-end-line="46" selection-end-column="9" />
-              <folding />
+            <state relative-caret-position="289">
+              <caret line="60" column="9" lean-forward="true" selection-start-line="60" selection-start-column="9" selection-end-line="60" selection-end-column="9" />
+              <folding>
+                <element signature="e#0#2259#0" expanded="true" />
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="UserResponse.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/api/src/main/java/com/lovcreate/api/bean/response/UserResponse.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="29">
+              <caret line="10" column="3" lean-forward="true" selection-start-line="10" selection-start-column="3" selection-end-line="10" selection-end-column="3" />
+              <folding>
+                <element signature="imports" expanded="true" />
+                <element signature="e#414#415#0" expanded="true" />
+                <element signature="e#443#444#0" expanded="true" />
+                <element signature="e#494#495#0" expanded="true" />
+                <element signature="e#530#531#0" expanded="true" />
+                <element signature="e#559#560#0" expanded="true" />
+                <element signature="e#584#585#0" expanded="true" />
+                <element signature="e#620#621#0" expanded="true" />
+                <element signature="e#648#649#0" expanded="true" />
+                <element signature="e#683#684#0" expanded="true" />
+                <element signature="e#714#715#0" expanded="true" />
+                <element signature="e#762#763#0" expanded="true" />
+                <element signature="e#802#803#0" expanded="true" />
+                <element signature="e#837#838#0" expanded="true" />
+                <element signature="e#868#869#0" expanded="true" />
+                <element signature="e#916#917#0" expanded="true" />
+                <element signature="e#956#957#0" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -50,45 +78,79 @@
       <file leaf-file-name="UserServiceImpl.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/service/src/main/java/com/lovcreate/service/impl/UserServiceImpl.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="240">
-              <caret line="28" column="46" lean-forward="true" selection-start-line="28" selection-start-column="46" selection-end-line="28" selection-end-column="46" />
+            <state relative-caret-position="347">
+              <caret line="55" column="73" lean-forward="false" selection-start-line="55" selection-start-column="50" selection-end-line="55" selection-end-column="73" />
+              <folding>
+                <element signature="imports" expanded="true" />
+                <element signature="method#main#0;class#UserServiceImpl#0" expanded="false" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="ApiErrorCode.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/api/src/main/java/com/lovcreate/api/ApiErrorCode.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="222">
+              <caret line="10" column="36" lean-forward="false" selection-start-line="10" selection-start-column="36" selection-end-line="10" selection-end-column="36" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="CommodityController.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/mgt/src/main/java/com/lovcreate/mgt/controller/CommodityController.java">
+      <file leaf-file-name="UserMapper.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/service/src/main/java/com/lovcreate/service/dao/UserMapper.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="174">
-              <caret line="8" column="34" lean-forward="false" selection-start-line="8" selection-start-column="34" selection-end-line="8" selection-end-column="34" />
+            <state relative-caret-position="173">
+              <caret line="9" column="0" lean-forward="false" selection-start-line="9" selection-start-column="0" selection-end-line="9" selection-end-column="11" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="RoleActionMapper.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/service/src/main/java/com/lovcreate/service/dao/RoleActionMapper.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="347">
+              <caret line="12" column="18" lean-forward="false" selection-start-line="12" selection-start-column="18" selection-end-line="12" selection-end-column="18" />
               <folding>
-                <element signature="e#0#185#0" expanded="false" />
+                <element signature="imports" expanded="true" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="UserAccess.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/service/src/main/java/com/lovcreate/service/weixin/UserAccess.java">
+      <file leaf-file-name="UserMapper.xml" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/service/src/main/resources/mybatis/mapper/UserMapper.xml">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="319">
-              <caret line="15" column="48" lean-forward="false" selection-start-line="15" selection-start-column="27" selection-end-line="15" selection-end-column="48" />
+            <state relative-caret-position="348">
+              <caret line="12" column="86" lean-forward="true" selection-start-line="12" selection-start-column="86" selection-end-line="12" selection-end-column="86" />
               <folding>
-                <element signature="e#0#472#0" expanded="false" />
-                <element signature="imports" expanded="false" />
-                <element signature="e#385#386#0" expanded="false" />
-                <element signature="e#466#467#0" expanded="false" />
+                <marker date="1499669116812" expanded="true" signature="241:302" ph="insert into user... " />
+                <marker date="1499669116812" expanded="true" signature="417:475" ph="select * fro... user" />
+                <marker date="1499669116812" expanded="true" signature="586:669" ph="SELECT * fro... user" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="spring-quartz.xml" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/service/src/main/resources/spring/spring-quartz.xml">
+      <file leaf-file-name="RoleActionMapper.xml" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/service/src/main/resources/mybatis/mapper/RoleActionMapper.xml">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="2366">
-              <caret line="95" column="35" lean-forward="true" selection-start-line="95" selection-start-column="35" selection-end-line="95" selection-end-column="35" />
+            <state relative-caret-position="318">
+              <caret line="12" column="4" lean-forward="false" selection-start-line="12" selection-start-column="4" selection-end-line="12" selection-end-column="4" />
+              <folding>
+                <marker date="1499669870632" expanded="true" signature="763:843" ph="SELECT actio... role_action" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="RoleAction.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/service/src/main/java/com/lovcreate/service/entity/RoleAction.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="58">
+              <caret line="2" column="13" lean-forward="false" selection-start-line="2" selection-start-column="13" selection-end-line="2" selection-end-column="13" />
               <folding />
             </state>
           </provider>
@@ -97,30 +159,10 @@
       <file leaf-file-name="UserService.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/api/src/main/java/com/lovcreate/api/service/UserService.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="232">
-              <caret line="8" column="18" lean-forward="false" selection-start-line="8" selection-start-column="12" selection-end-line="8" selection-end-column="18" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="JsonUtil.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/api/src/main/java/com/lovcreate/api/utils/JsonUtil.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="60">
-              <caret line="73" column="25" lean-forward="true" selection-start-line="73" selection-start-column="25" selection-end-line="73" selection-end-column="25" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="BaseWeixinAccess.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/service/src/main/java/com/lovcreate/service/weixin/BaseWeixinAccess.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="174">
-              <caret line="8" column="29" lean-forward="false" selection-start-line="8" selection-start-column="23" selection-end-line="8" selection-end-column="29" />
+            <state relative-caret-position="347">
+              <caret line="12" column="35" lean-forward="true" selection-start-line="12" selection-start-column="35" selection-end-line="12" selection-end-column="35" />
               <folding>
-                <element signature="e#0#182#0" expanded="false" />
+                <element signature="imports" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -131,8 +173,8 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="Interface" />
         <option value="HTML File" />
+        <option value="Interface" />
         <option value="Class" />
       </list>
     </option>
@@ -177,9 +219,6 @@
         <option value="$PROJECT_DIR$/mgt/src/main/java/com/lovcreate/mgt/response/BaseResponse.java" />
         <option value="$PROJECT_DIR$/mgt/src/main/java/com/lovcreate/mgt/controller/AbstractController.java" />
         <option value="$PROJECT_DIR$/mgt/src/main/resources/spring/application-context-remote.xml" />
-        <option value="$PROJECT_DIR$/service/src/main/resources/mybatis/mapper/UserMapper.xml" />
-        <option value="$PROJECT_DIR$/api/src/main/java/com/lovcreate/api/service/UserService.java" />
-        <option value="$PROJECT_DIR$/service/src/main/java/com/lovcreate/service/dao/UserMapper.java" />
         <option value="$PROJECT_DIR$/service/src/main/resources/datasource.properties" />
         <option value="$PROJECT_DIR$/api/src/main/java/com/lovcreate/api/bean/request/UserRequest.java" />
         <option value="$PROJECT_DIR$/service/src/main/resources/spring/application-context.xml" />
@@ -195,8 +234,18 @@
         <option value="$PROJECT_DIR$/mgt/src/main/webapp/WEB-INF/web.xml" />
         <option value="$PROJECT_DIR$/mgt/src/main/webapp/WEB-INF/fe/login.html" />
         <option value="$PROJECT_DIR$/service/src/main/java/com/lovcreate/service/weixin/UserAccess.java" />
-        <option value="$PROJECT_DIR$/mgt/src/main/java/com/lovcreate/mgt/controller/UserController.java" />
+        <option value="$PROJECT_DIR$/api/src/main/java/com/lovcreate/api/bean/response/UserListResponse.java" />
+        <option value="$PROJECT_DIR$/api/src/main/java/com/lovcreate/api/ApiResult.java" />
+        <option value="$PROJECT_DIR$/api/src/main/java/com/lovcreate/api/service/UserService.java" />
+        <option value="$PROJECT_DIR$/service/src/main/java/com/lovcreate/service/dao/UserMapper.java" />
+        <option value="$PROJECT_DIR$/service/src/main/resources/mybatis/mapper/UserMapper.xml" />
+        <option value="$PROJECT_DIR$/api/src/main/java/com/lovcreate/api/ApiErrorCode.java" />
+        <option value="$PROJECT_DIR$/service/src/main/java/com/lovcreate/service/dao/RoleActionMapper.java" />
+        <option value="$PROJECT_DIR$/service/src/main/resources/mybatis/mapper/RoleActionMapper.xml" />
+        <option value="$PROJECT_DIR$/service/src/main/java/com/lovcreate/service/entity/RoleAction.java" />
+        <option value="$PROJECT_DIR$/api/src/main/java/com/lovcreate/api/bean/response/UserResponse.java" />
         <option value="$PROJECT_DIR$/service/src/main/java/com/lovcreate/service/impl/UserServiceImpl.java" />
+        <option value="$PROJECT_DIR$/mgt/src/main/java/com/lovcreate/mgt/controller/UserController.java" />
       </list>
     </option>
   </component>
@@ -405,6 +454,126 @@
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="main" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="fruit" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="fruit" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="service" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="main" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="resources" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="fruit" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="fruit" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="service" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="main" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="resources" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="mybatis" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="fruit" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="fruit" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="service" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="main" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="resources" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="mybatis" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="mapper" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="fruit" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="fruit" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="service" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="main" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="resources" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="db" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -671,17 +840,18 @@
   </component>
   <component name="RecentsManager">
     <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="com.lovcreate.api" />
       <recent name="com.lovcreate.mgt.controller" />
       <recent name="com.lovcreate.api.utils" />
       <recent name="com.lovcreate.mgt.response" />
       <recent name="com.lovcreate.fruit.until" />
     </key>
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="E:\20170615pro\eyas\eyas\fruit\service\src\main\resources\mybatis\mapper" />
       <recent name="E:\20170615pro\eyas\eyas\fruit\service\src\main" />
       <recent name="E:\20170615pro\eyas\eyas\fruit\service\src\main\resources" />
       <recent name="E:\20170615pro\eyas\eyas\fruit\mgt\src\main\resources" />
       <recent name="E:\20170615pro\eyas\eyas\fruit\mgt\src\main" />
-      <recent name="E:\20170615pro\eyas\eyas\fruit\service\src" />
     </key>
   </component>
   <component name="RunDashboard">
@@ -1354,12 +1524,12 @@
       <workItem from="1498782093573" duration="2431000" />
       <workItem from="1499040990508" duration="4959000" />
       <workItem from="1499127972913" duration="2228000" />
-      <workItem from="1499645967105" duration="6390000" />
+      <workItem from="1499645967105" duration="10624000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="38315000" />
+    <option name="totallyTimeSpent" value="42549000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
@@ -1367,7 +1537,7 @@
     <layout>
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Nl-Palette" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.29431438" sideWeight="0.5021322" order="7" side_tool="true" content_ui="tabs" />
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.2935268" sideWeight="0.5042644" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32998884" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.34808102" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Properties" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
@@ -1385,7 +1555,7 @@
       <window_info id="Java Enterprise" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Analysis" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.2935268" sideWeight="0.4978678" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.2935268" sideWeight="0.49573562" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Spring" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="CheckStyle" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
@@ -1419,56 +1589,6 @@
     <option name="FILTER_TARGETS" value="false" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/service/src/main/resources/db/create.sql">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/service/src/main/java/com/lovcreate/service/datasource/DataSourceInstances.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="21" lean-forward="false" selection-start-line="0" selection-start-column="21" selection-end-line="0" selection-end-column="21" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/service/src/main/java/com/lovcreate/service/datasource/DataSources.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="348">
-          <caret line="12" column="31" lean-forward="false" selection-start-line="12" selection-start-column="15" selection-end-line="12" selection-end-column="31" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/service/src/main/java/com/lovcreate/service/datasource/DataSourceSwitch.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="87">
-          <caret line="3" column="19" lean-forward="false" selection-start-line="3" selection-start-column="14" selection-end-line="3" selection-end-column="19" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/service/src/main/java/com/lovcreate/service/quartz/WorkTimeCalTask.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="174">
-          <caret line="8" column="28" lean-forward="false" selection-start-line="8" selection-start-column="28" selection-end-line="8" selection-end-column="28" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/mgt/src/main/java/com/lovcreate/mgt/util/ParamsInterceptor.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/mgt/src/main/resources/spring/application-context.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/api/src/main/java/com/lovcreate/api/bean/response.java" />
     <entry file="file://$PROJECT_DIR$/service/src/main/resources/jdbc.properties">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="29">
@@ -1635,23 +1755,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/service/src/main/resources/mybatis/mapper/UserMapper.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="203">
-          <caret line="7" column="9" lean-forward="false" selection-start-line="7" selection-start-column="9" selection-end-line="7" selection-end-column="9" />
-          <folding>
-            <marker date="1498615332483" expanded="true" signature="241:302" ph="insert into user... " />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/service/src/main/java/com/lovcreate/service/dao/UserMapper.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="261">
-          <caret line="10" column="12" lean-forward="false" selection-start-line="10" selection-start-column="12" selection-end-line="10" selection-end-column="12" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/api/api.iml">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
@@ -1684,16 +1787,6 @@
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/service/src/main/java/com/lovcreate/service/weixin.java" />
-    <entry file="file://$PROJECT_DIR$/mgt/src/main/java/com/lovcreate/mgt/controller/CommodityController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="174">
-          <caret line="8" column="34" lean-forward="false" selection-start-line="8" selection-start-column="34" selection-end-line="8" selection-end-column="34" />
-          <folding>
-            <element signature="e#0#185#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/service/src/main/java/com/lovcreate/service/weixin/BaseWeixinAccess.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="174">
@@ -1721,15 +1814,7 @@
     <entry file="file://$PROJECT_DIR$/service/src/main/resources/spring/spring-quartz.xml">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="2366">
-          <caret line="95" column="35" lean-forward="true" selection-start-line="95" selection-start-column="35" selection-end-line="95" selection-end-column="35" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/api/src/main/java/com/lovcreate/api/bean/request/UserRequest.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="582">
-          <caret line="37" column="0" lean-forward="true" selection-start-line="37" selection-start-column="0" selection-end-line="37" selection-end-column="0" />
+          <caret line="95" column="35" lean-forward="false" selection-start-line="95" selection-start-column="35" selection-end-line="95" selection-end-column="35" />
           <folding />
         </state>
       </provider>
@@ -1737,7 +1822,7 @@
     <entry file="file://$PROJECT_DIR$/mgt/src/main/resources/spring/application-context-mvc.xml">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="540">
-          <caret line="71" column="59" lean-forward="true" selection-start-line="71" selection-start-column="59" selection-end-line="71" selection-end-column="59" />
+          <caret line="71" column="59" lean-forward="false" selection-start-line="71" selection-start-column="59" selection-end-line="71" selection-end-column="59" />
           <folding />
         </state>
       </provider>
@@ -1745,32 +1830,166 @@
     <entry file="file://$PROJECT_DIR$/api/src/main/java/com/lovcreate/api/utils/JsonUtil.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="60">
-          <caret line="73" column="25" lean-forward="true" selection-start-line="73" selection-start-column="25" selection-end-line="73" selection-end-column="25" />
+          <caret line="73" column="25" lean-forward="false" selection-start-line="73" selection-start-column="25" selection-end-line="73" selection-end-column="25" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/api/src/main/java/com/lovcreate/api/service/UserService.java">
+    <entry file="file://$PROJECT_DIR$/mgt/src/main/java/com/lovcreate/mgt/controller/CommodityController.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="232">
-          <caret line="8" column="18" lean-forward="false" selection-start-line="8" selection-start-column="12" selection-end-line="8" selection-end-column="18" />
+        <state relative-caret-position="174">
+          <caret line="8" column="34" lean-forward="false" selection-start-line="8" selection-start-column="34" selection-end-line="8" selection-end-column="34" />
           <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/org/apache/shiro/shiro-core/1.3.0/shiro-core-1.3.0.jar!/org/apache/shiro/authc/UsernamePasswordToken.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="202">
+          <caret line="21" column="11" lean-forward="false" selection-start-line="21" selection-start-column="11" selection-end-line="21" selection-end-column="11" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/api/src/main/java/com/lovcreate/api/bean/request/UserRequest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="89">
+          <caret line="10" column="48" lean-forward="false" selection-start-line="10" selection-start-column="36" selection-end-line="10" selection-end-column="48" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/api/src/main/java/com/lovcreate/api/bean/response/UserListResponse.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="348">
+          <caret line="14" column="43" lean-forward="false" selection-start-line="14" selection-start-column="43" selection-end-line="14" selection-end-column="43" />
+          <folding>
+            <element signature="e#356#357#0" expanded="true" />
+            <element signature="e#418#419#0" expanded="true" />
+            <element signature="e#466#467#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/api/src/main/java/com/lovcreate/api/ApiResult.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-232">
+          <caret line="7" column="7" lean-forward="true" selection-start-line="7" selection-start-column="7" selection-end-line="7" selection-end-column="7" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/api/src/main/java/com/lovcreate/api/ApiErrorCode.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="222">
+          <caret line="10" column="36" lean-forward="false" selection-start-line="10" selection-start-column="36" selection-end-line="10" selection-end-column="36" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/service/src/main/java/com/lovcreate/service/dao/UserMapper.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="173">
+          <caret line="9" column="0" lean-forward="false" selection-start-line="9" selection-start-column="0" selection-end-line="9" selection-end-column="11" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/service/src/main/resources/mybatis/mapper/UserMapper.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="348">
+          <caret line="12" column="86" lean-forward="true" selection-start-line="12" selection-start-column="86" selection-end-line="12" selection-end-column="86" />
+          <folding>
+            <marker date="1499669116812" expanded="true" signature="241:302" ph="insert into user... " />
+            <marker date="1499669116812" expanded="true" signature="417:475" ph="select * fro... user" />
+            <marker date="1499669116812" expanded="true" signature="586:669" ph="SELECT * fro... user" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/service/src/main/java/com/lovcreate/service/entity/RoleAction.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="58">
+          <caret line="2" column="13" lean-forward="false" selection-start-line="2" selection-start-column="13" selection-end-line="2" selection-end-column="13" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/service/src/main/resources/mybatis/mapper/RoleActionMapper.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="318">
+          <caret line="12" column="4" lean-forward="false" selection-start-line="12" selection-start-column="4" selection-end-line="12" selection-end-column="4" />
+          <folding>
+            <marker date="1499669870632" expanded="true" signature="763:843" ph="SELECT actio... role_action" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/service/src/main/java/com/lovcreate/service/dao/RoleActionMapper.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="347">
+          <caret line="12" column="18" lean-forward="false" selection-start-line="12" selection-start-column="18" selection-end-line="12" selection-end-column="18" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/api/src/main/java/com/lovcreate/api/bean/response/UserResponse.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="29">
+          <caret line="10" column="3" lean-forward="true" selection-start-line="10" selection-start-column="3" selection-end-line="10" selection-end-column="3" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#414#415#0" expanded="true" />
+            <element signature="e#443#444#0" expanded="true" />
+            <element signature="e#494#495#0" expanded="true" />
+            <element signature="e#530#531#0" expanded="true" />
+            <element signature="e#559#560#0" expanded="true" />
+            <element signature="e#584#585#0" expanded="true" />
+            <element signature="e#620#621#0" expanded="true" />
+            <element signature="e#648#649#0" expanded="true" />
+            <element signature="e#683#684#0" expanded="true" />
+            <element signature="e#714#715#0" expanded="true" />
+            <element signature="e#762#763#0" expanded="true" />
+            <element signature="e#802#803#0" expanded="true" />
+            <element signature="e#837#838#0" expanded="true" />
+            <element signature="e#868#869#0" expanded="true" />
+            <element signature="e#916#917#0" expanded="true" />
+            <element signature="e#956#957#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/service/src/main/java/com/lovcreate/service/impl/UserServiceImpl.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="240">
-          <caret line="28" column="46" lean-forward="true" selection-start-line="28" selection-start-column="46" selection-end-line="28" selection-end-column="46" />
-          <folding />
+        <state relative-caret-position="347">
+          <caret line="55" column="73" lean-forward="false" selection-start-line="55" selection-start-column="50" selection-end-line="55" selection-end-column="73" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="method#main#0;class#UserServiceImpl#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/api/src/main/java/com/lovcreate/api/service/UserService.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="347">
+          <caret line="12" column="35" lean-forward="true" selection-start-line="12" selection-start-column="35" selection-end-line="12" selection-end-column="35" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/mgt/src/main/java/com/lovcreate/mgt/controller/UserController.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="315">
-          <caret line="46" column="9" lean-forward="false" selection-start-line="46" selection-start-column="4" selection-end-line="46" selection-end-column="9" />
-          <folding />
+        <state relative-caret-position="289">
+          <caret line="60" column="9" lean-forward="true" selection-start-line="60" selection-start-column="9" selection-end-line="60" selection-end-column="9" />
+          <folding>
+            <element signature="e#0#2259#0" expanded="true" />
+            <element signature="imports" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>

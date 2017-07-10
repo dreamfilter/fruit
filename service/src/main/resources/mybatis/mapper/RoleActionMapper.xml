@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd" >
+<mapper namespace="com.lovcreate.service.dao.RoleActionMapper">
+    <resultMap id="BaseResultMap" type="com.lovcreate.service.entity.RoleAction">
+        <id column="id" property="id" jdbcType="INTEGER"/>
+        <result column="manager_id" property="managerId" jdbcType="INTEGER"/>
+        <result column="action_id" property="actionId" jdbcType="INTEGER"/>
+        <result column="del_status" property="delStatus" jdbcType="BIT"/>
+    </resultMap>
+    <sql id="Base_Column_List">
+    id, manager_id, action_id, del_status
+  </sql>
+    <select id="selectActionIdByManager" resultType="java.lang.Integer">
+        SELECT action_id FROM role_action where manager_id=#{managerId} and del_status=1
+    </select>
+</mapper>
