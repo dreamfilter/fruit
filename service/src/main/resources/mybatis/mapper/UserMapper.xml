@@ -5,4 +5,12 @@
     <insert id="insert">
         insert into user(name,age,sex) VALUES (#{name},#{age},#{sex})
     </insert>
+
+    <select id="selectPassWord" resultType="com.lovcreate.api.bean.response.UserResponse">
+        select * from user where name=#{userNamr} and del_status=1
+    </select>
+
+    <select id="checkLogin" resultType="com.lovcreate.api.bean.response.UserResponse">
+        SELECT * from user WHERE name=#{username} and password=#{password} and del_status=1
+    </select>
 </mapper>
